@@ -1,15 +1,16 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main - assigns a random number to the value of n everytime
- *
- * it executes and prints it. The program will also tell if  n is positive, negative or zero
+ * it executes and prints it. The program will also tell if
+ * n is positive, negative or zero
  * Return: 0 if (successful)
- */
+*/
 int main(void)
 {
 	int n;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
